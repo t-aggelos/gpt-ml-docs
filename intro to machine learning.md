@@ -14,6 +14,28 @@ The sigmoid function is a common activation function used in neural networks. It
 
 However, it's worth noting that the sigmoid function has some limitations. When the input to the sigmoid function is too large or too small, the function saturates, causing the gradient to be very small. This can lead to slower learning or vanishing gradients, especially in deep neural networks. In practice, other activation functions like ReLU (Rectified Linear Unit) are often preferred for hidden layers in deep neural networks due to their ability to mitigate the vanishing gradient problem.
 
+## The neural network
+ - Neural networks are complex systems that learn to perform tasks by adjusting their internal parameters based on input data. Under the hood, neural networks consist of interconnected artificial neurons (also called nodes or units) organized into layers.
+Let's explore the working of neural networks in a simplified manner:
+
+- Input Layer: The input layer receives the initial data or features. Each neuron in the input layer represents a feature of the input data. For example, in an image classification task, each neuron may represent a pixel value.
+
+- Hidden Layers: Neural networks typically have one or more hidden layers between the input and output layers. Each neuron in the hidden layers receives inputs from the previous layer and applies a transformation to produce an output. These transformations are determined by the weights and biases associated with each neuron.
+
+- Weights and Biases: Each connection between neurons in adjacent layers has an associated weight. Weights determine the strength or importance of each input to the neuron. Biases act as additional input values that adjust the output of the neuron. These weights and biases are initially assigned random values and are updated during the training process to optimize the network's performance.
+
+- Activation Function: After applying the transformation (usually a weighted sum of inputs and biases), an activation function is applied to the output of each neuron in the hidden layers. The activation function introduces non-linearity, allowing the neural network to learn complex relationships between inputs and outputs. Common activation functions include sigmoid, ReLU, and tanh.
+
+- Output Layer: The output layer produces the final results of the neural network. The number of neurons in the output layer depends on the nature of the task. For example, in a binary classification problem, the output layer may have a single neuron representing the probability of belonging to one class. In a multi-class classification problem, there will be multiple neurons, each representing the probability of belonging to a specific class.
+
+-  Forward Propagation: Once the input data is fed into the network, the calculations flow forward through the layers in a process called forward propagation. Each neuron receives inputs, applies transformations, and passes the results to the next layer until the final output is generated.
+
+ - Loss Function and Training: To train the neural network, a loss function is used to measure the difference between the predicted output and the desired output. The goal is to minimize this difference by adjusting the weights and biases. This is done using optimization algorithms such as gradient descent and backpropagation. Backpropagation calculates the gradients of the loss with respect to the weights and biases, allowing the network to update them in the direction that reduces the loss.
+
+- Iterative Training: The training process involves repeatedly presenting training examples to the network, adjusting the weights and biases based on the computed gradients, and refining the network's predictions. This iterative process continues until the network's performance reaches a satisfactory level.
+
+By iteratively adjusting the weights and biases through training, neural networks can learn complex patterns and make predictions or classifications based on input data. They can be applied to a wide range of tasks, including image and speech recognition, natural language processing, time series analysis, and much more.
+
 ## Weights and Neural Networks
 In a neural network, weights are the parameters that define the strength of connections between neurons. They determine how inputs from one layer are combined and transformed to produce outputs in the next layer.
 - Each connection between neurons in adjacent layers has an associated weight. These weights represent the importance or contribution of each input to the output of a neuron. Think of them as the "knobs" that the network adjusts during the learning process to achieve the desired output.
