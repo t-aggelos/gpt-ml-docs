@@ -201,10 +201,30 @@ void destroyNeuralNetwork(NeuralNetwork* nn) {
 
 - Reinforcement Learning (RL): RL is a framework where an agent learns to make decisions by interacting with an environment and receiving rewards. Deep Reinforcement Learning (DRL) combines RL algorithms with deep neural networks, enabling agents to learn complex behaviors from raw input data. DRL has achieved impressive results in game playing, robotics, and autonomous systems.
 
+### The Transformer Architcture
+The Transformer architecture is a type of neural network architecture introduced in the paper "Attention Is All You Need" by Vaswani et al. in 2017. It has revolutionized the field of natural language processing (NLP) and has been widely adopted in various sequence-based tasks.
 
-### GPT (Generative Pre-trained Transformer) is a groundbreaking model in the field of natural language processing (NLP) developed by OpenAI. It is based on the Transformer architecture, which is a type of neural network model specifically designed for sequence tasks.
+The Transformer architecture is based on the concept of self-attention, which allows the model to weigh the importance of different positions within a sequence when processing it. Unlike recurrent neural networks (RNNs) that process sequences sequentially, Transformers can process the entire sequence in parallel, making them more efficient for long-range dependencies.It has been highly successful in NLP tasks such as machine translation, text generation, sentiment analysis, and more. It has demonstrated superior performance and efficiency compared to traditional recurrent-based models, making it a popular choice in the field of sequence modeling and understanding.
 
-GPT models, such as GPT-3, are pre-trained on large amounts of text data from the internet and can generate human-like text given a prompt or context. These models excel in tasks like language generation, text completion, translation, question-answering, and more.
+
+Here are some key components and concepts of the Transformer architecture:
+
+- Self-Attention: Self-attention is the core mechanism in Transformers. It allows the model to compute attention weights for each position in the input sequence, based on the relevance of other positions. This enables the model to capture dependencies between different parts of the sequence. Self-attention is computed by forming three matrices: Query, Key, and Value. Attention weights are calculated by taking dot products between the Query and Key matrices.
+
+- Encoder and Decoder: The Transformer architecture consists of an encoder and a decoder. The encoder processes the input sequence and generates a representation - that captures contextual information. The decoder takes this representation and generates an output sequence by attending to the relevant parts of the input.
+
+- Multi-Head Attention: Transformers use multi-head attention, where multiple sets of attention weights are computed in parallel. This allows the model to capture different types of information and attend to multiple aspects of the input simultaneously. The outputs of the attention heads are concatenated and linearly transformed to generate the final attention output.
+
+- Positional Encoding: Since Transformers do not rely on recurrent connections or convolutional filters, they need a way to capture the sequential order of the input. Positional encoding is used to provide the model with information about the position of each element in the sequence. These positional encodings are added to the input embeddings, enabling the model to differentiate between elements based on their positions.
+
+- Feedforward Networks: Transformers also include feedforward neural networks, typically consisting of multiple layers, for each position in the sequence. These networks help capture complex interactions and transformations within the sequence.
+
+- Lastly, a groundbeaking model in AI research that is based on this very architecture is:
+
+## GPT (Generative Pre-trained Transformer) 
+ - GPT,for short, is a groundbreaking model in the field of natural language processing (NLP) developed by OpenAI. It is based on the Transformer architecture, which is a type of neural network model specifically designed for sequence tasks.
+
+ - GPT models, such as GPT-3, are pre-trained on large amounts of text data from the internet and can generate human-like text given a prompt or context. These models excel in tasks like language generation, text completion, translation, question-answering, and more.
 
 Some key features and concepts related to GPT models include:
 
@@ -217,3 +237,4 @@ Some key features and concepts related to GPT models include:
 - Large-Scale Language Generation: GPT models have an impressive capacity to generate coherent and contextually relevant text. They can produce paragraphs, articles, poetry, and even hold interactive conversations, making them versatile language generation tools.
 
 GPT-3, in particular, is known for its remarkable size, with 175 billion parameters. This large-scale model exhibits impressive language capabilities, but it also demands significant computational resources for training and inference. GPT models have found applications in various domains, including content generation, chatbots, language translation, content summarization, and more. They have contributed significantly to advancing the field of NLP and have opened up exciting possibilities for natural language understanding and generation.
+
