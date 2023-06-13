@@ -15,9 +15,9 @@ The sigmoid function is a common activation function used in neural networks. It
 However, it's worth noting that the sigmoid function has some limitations. When the input to the sigmoid function is too large or too small, the function saturates, causing the gradient to be very small. This can lead to slower learning or vanishing gradients, especially in deep neural networks. In practice, other activation functions like ReLU (Rectified Linear Unit) are often preferred for hidden layers in deep neural networks due to their ability to mitigate the vanishing gradient problem.
 
 ## The neural network
- - Neural networks are complex systems that learn to perform tasks by adjusting their internal parameters based on input data. Under the hood, neural networks consist of interconnected artificial neurons (also called nodes or units) organized into layers.
-Let's explore the working of neural networks in a simplified manner:
+Neural networks are complex systems that learn to perform tasks by adjusting their internal parameters based on input data. Under the hood, neural networks consist of interconnected artificial neurons (also called nodes or units) organized into layers.
 
+Let's explore the working of neural networks in a simplified manner:
 - Input Layer: The input layer receives the initial data or features. Each neuron in the input layer represents a feature of the input data. For example, in an image classification task, each neuron may represent a pixel value.
 
 - Hidden Layers: Neural networks typically have one or more hidden layers between the input and output layers. Each neuron in the hidden layers receives inputs from the previous layer and applies a transformation to produce an output. These transformations are determined by the weights and biases associated with each neuron.
