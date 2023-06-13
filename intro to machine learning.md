@@ -241,8 +241,7 @@ Here are some key components and concepts of the Transformer architecture:
 
 - Feedforward Networks: Transformers also include feedforward neural networks, typically consisting of multiple layers, for each position in the sequence. These networks help capture complex interactions and transformations within the sequence.
 
-- Lastly, a groundbeaking model in AI research that is based on this very architecture is:
-
+Lastly, a groundbeaking model in AI research that is based on this very architecture is:
 ## GPT (Generative Pre-trained Transformer) 
  - GPT,for short, is a groundbreaking model in the field of natural language processing (NLP) developed by OpenAI. It is based on the Transformer architecture, which is a type of neural network model specifically designed for sequence tasks.
 
